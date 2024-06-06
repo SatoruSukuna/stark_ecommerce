@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #cdcdcd;
+    --main-color: #343a40;
+    --primary-color: #76757b;
+    --secondary-color: #212529;
+    --text-color: #e9ecef;
+    --xxl-size: 6rem;
+    --xl-size: 4rem;
+    --l-size: 2rem;
+    --md-size: 1.5rem;
+    --sm-size: 1rem;
+    --xsm-size: 0.8rem;
+}
+
+html,
+body {
+    font-size: 60%;
+    background: var(--bg-color);
+    font-family: "Kanit", sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    .main_container{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .main_content{
+            position: absolute;
+            top: 20rem;
+            left: 5%;
+            color: var(--text-color);
+            h3{
+                font-size: var(--xxl-size);
+                background: var(--secondary-color );
+                width: fit-content;
+                line-height: 5rem;
+            }
+            h1{
+                font-size: 15rem;
+                background: var(--secondary-color );
+                line-height: 12rem;
+                width: fit-content;
+            }
+            h6{
+                font-size: var(--l-size);
+                line-height: 12rem;
+            }
+            button{
+                padding: var(--sm-size) var(--l-size);
+                font-size: var(--l-size);
+            }
+        }
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    img {
+        width: 80px;
+        mix-blend-mode: screen;
+    }
+
+    nav {
+        a {
+            font-size: var(--l-size);
+            margin-left: 2rem;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+    }
+    
+    .icon {
+        font-size: 3rem;
+        padding-right: 10%;
+        
+        i {
+            padding: 0.3rem;
+            color: var(--text-color);
+        }
+    }
+}
